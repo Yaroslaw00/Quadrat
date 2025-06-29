@@ -1,0 +1,39 @@
+.quadrat {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  background-color: blue;
+  animation-name: animate;
+}
+.quadrat {
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+  }
+  25% {
+    top: 700px;
+    left: 0px;
+    background-color: red;
+  }
+  50% {
+    top: 700px;
+    left: 90%;
+    background-color: green;
+  }
+  75% {
+    left: 90%;
+    top: 0px;
+    background-color: yellow;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+  }
+}
